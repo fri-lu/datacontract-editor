@@ -1,0 +1,148 @@
+# Hides all standard property fields at every configurable data contract level.
+dataContract:
+  root:
+    standardProperties:
+      - property: id
+        hidden: false
+      - property: name
+        hidden: false
+      - property: version
+        hidden: false
+      - property: status
+        hidden: false
+      - property: domain
+        hidden: false
+      - property: tenant
+        hidden: false
+      - property: tags
+        hidden: false
+
+  description:
+    standardProperties:
+      - property: purpose
+        hidden: false
+      - property: usage
+        hidden: true
+      - property: limitations
+        hidden: true
+      - property: authoritativeDefinitions
+        hidden: true
+
+  schema:
+    standardProperties:
+      - property: name
+        hidden: true
+      - property: logicalType
+        hidden: true
+      - property: physicalType
+        hidden: true
+      - property: physicalName
+        hidden: true
+      - property: description
+        hidden: true
+      - property: businessName
+        hidden: true
+      - property: dataGranularityDescription
+        hidden: true
+      - property: tags
+        hidden: true
+
+  schema.properties:
+    standardProperties:
+      - property: name
+        hidden: true
+      - property: logicalType
+        hidden: true
+      - property: physicalType
+        hidden: true
+      - property: physicalName
+        hidden: true
+      - property: description
+        hidden: true
+      - property: businessName
+        hidden: true
+      - property: required
+        hidden: true
+      - property: unique
+        hidden: true
+      - property: primaryKey
+        hidden: true
+      - property: partitioned
+        hidden: true
+      - property: classification
+        hidden: true
+      - property: encryptedName
+        hidden: true
+      - property: transformLogic
+        hidden: true
+      - property: transformDescription
+        hidden: true
+      - property: transformSourceObjects
+        hidden: true
+      - property: criticalDataElement
+        hidden: true
+      - property: examples
+        hidden: true
+
+  servers:
+    standardProperties:
+      - property: server
+        hidden: true
+      - property: type
+        hidden: true
+      - property: environment
+        hidden: true
+      - property: description
+        hidden: true
+
+  team:
+    standardProperties:
+      - property: name
+        hidden: true
+      - property: description
+        hidden: true
+      - property: tags
+        hidden: true
+
+  team.members:
+    standardProperties:
+      - property: username
+        hidden: true
+      - property: name
+        hidden: true
+      - property: role
+        hidden: true
+      - property: description
+        hidden: true
+      - property: dateIn
+        hidden: true
+      - property: dateOut
+        hidden: true
+
+  roles:
+    standardProperties:
+      - property: role
+        hidden: true
+      - property: description
+        hidden: true
+      - property: access
+        hidden: true
+      - property: firstLevelApprovers
+        hidden: true
+      - property: secondLevelApprovers
+        hidden: true
+
+  support:
+    standardProperties:
+      - property: channel
+        hidden: true
+      - property: url
+        hidden: true
+      - property: description
+        hidden: true
+      - property: tool
+        hidden: true
+      - property: scope
+        hidden: true
+      - property: invitationUrl
+        hidden: true
